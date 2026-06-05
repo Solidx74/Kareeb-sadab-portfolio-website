@@ -1,4 +1,4 @@
-# Solid's Portfolio
+# Kareeb Sadab's Portfolio
 
 Building secure systems, AI-powered applications, and blockchain solutions.
 
@@ -24,7 +24,7 @@ Computer Science & Engineering student focused on:
 
 ## Featured Projects
 
-* CredChain Nexus — Blockchain Credential Verification System
+* CredChain Nexus | Blockchain Credential Verification System
 * AI Resume Analyzer
 * Autonomous Intelligence Pipeline
 * Security Detection & Monitoring Tools
