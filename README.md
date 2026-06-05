@@ -158,20 +158,6 @@ Executive-level SOC dashboards — incident trends, KPIs, and threat heatmaps fo
 
 ---
 
-## `> htop` — GitHub Stats
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Solidx74&show_icons=true&theme=dark&bg_color=0d1117&title_color=00ff88&icon_color=00ff88&text_color=c8dde8&border_color=1a2a3a&hide_border=false)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Solidx74&layout=compact&theme=dark&bg_color=0d1117&title_color=00ff88&text_color=c8dde8&border_color=1a2a3a&hide_border=false)
-
-![GitHub Streak](https://streak-stats.demolab.com?user=Solidx74&theme=dark&background=0d1117&ring=00ff88&fire=00ff88&currStreakLabel=00ff88&border=1a2a3a&stroke=1a2a3a&sideLabels=c8dde8&dates=5a7a8a)
-
-</div>
-
----
-
 ## `> ping active-focus`
 
 ```
