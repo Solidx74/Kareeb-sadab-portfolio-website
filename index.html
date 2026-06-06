@@ -1500,10 +1500,10 @@
                 style="color:var(--cyan); margin-top: 5px; font-weight: 500;">TIME: --:--:-- UTC</div>
               <div style="margin-top: 10px; display: flex; gap: 10px;">
                 <a href="https://solidx74.github.io/ksds.github.io/" target="_blank" rel="noopener noreferrer"
-                  class="access-link-btn" style="padding: 5px 12px; font-size: 0.6rem;"><span>Data Live
+                  class="access-link-btn" style="padding: 5px 12px; font-size: 0.6rem;"><span>Data Science
                     &rarr;</span></a>
                 <a href="https://solidx74.github.io/ksda.github.io/" target="_blank" rel="noopener noreferrer"
-                  class="access-link-btn" style="padding: 5px 12px; font-size: 0.6rem;"><span>Tech Live
+                  class="access-link-btn" style="padding: 5px 12px; font-size: 0.6rem;"><span>Data Analysis
                     &rarr;</span></a>
               </div>
             </div>
@@ -2101,7 +2101,8 @@
 
         <!-- Harold Health Audit Disclosure -->
         <div class="panel" style="margin-top: 30px;">
-          <div class="panel-header" style="border-bottom: 1px solid var(--border-md); display: flex; justify-content: space-between; align-items: center;">
+          <div class="panel-header"
+            style="border-bottom: 1px solid var(--border-md); display: flex; justify-content: space-between; align-items: center;">
             <div style="display: flex; align-items: center; gap: 12px;">
               <div class="panel-dot pd-red"></div>
               <span>WEB3 AUDIT DISCLOSURE // HAROLD_HEALTH</span>
@@ -2109,27 +2110,42 @@
             <span style="font-family: var(--mono); font-size: 0.6rem; color: var(--text-faint);">REF: W3D-CR-79CC</span>
           </div>
           <div class="panel-content" style="display: flex; flex-direction: column; gap: 15px;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; background: rgba(2, 4, 8, 0.5); padding: 10px; border: 1px solid var(--border); font-family: var(--mono); font-size: 0.7rem;">
-              <div><span style="color: var(--text-dim);">TARGET:</span> <span style="color: #fff;">Harold Health v1.0</span></div>
-              <div><span style="color: var(--text-dim);">VULNERABILITY:</span> <span style="color: var(--red);">Broken Access Control</span></div>
-              <div><span style="color: var(--text-dim);">SEVERITY:</span> <span style="color: var(--red); font-weight: bold; text-shadow: 0 0 8px var(--red);">CRITICAL / HIGH</span></div>
-              <div><span style="color: var(--text-dim);">STATUS:</span> <span style="color: var(--green);">MITIGATED</span></div>
+            <div
+              style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; background: rgba(2, 4, 8, 0.5); padding: 10px; border: 1px solid var(--border); font-family: var(--mono); font-size: 0.7rem;">
+              <div><span style="color: var(--text-dim);">TARGET:</span> <span style="color: #fff;">Harold Health
+                  v1.0</span></div>
+              <div><span style="color: var(--text-dim);">VULNERABILITY:</span> <span style="color: var(--red);">Broken
+                  Access Control</span></div>
+              <div><span style="color: var(--text-dim);">SEVERITY:</span> <span
+                  style="color: var(--red); font-weight: bold; text-shadow: 0 0 8px var(--red);">CRITICAL / HIGH</span>
+              </div>
+              <div><span style="color: var(--text-dim);">STATUS:</span> <span
+                  style="color: var(--green);">MITIGATED</span></div>
             </div>
             <div style="font-family: var(--body); font-size: 0.88rem; line-height: 1.5; color: var(--text);">
               <p style="margin-bottom: 10px;">
-                During the security evaluation of Harold Health, an authorization flaw was isolated within the patient-to-provider credential allocation registry. The function missing identity matching filters permitted cross-entitled accounts to intercept data pathways.
+                During the security evaluation of Harold Health, an authorization flaw was isolated within the
+                patient-to-provider credential allocation registry. The function missing identity matching filters
+                permitted cross-entitled accounts to intercept data pathways.
               </p>
             </div>
-            <div style="background: rgba(2, 4, 8, 0.8); border: 1px solid rgba(255, 59, 92, 0.2); padding: 12px; font-family: var(--mono); font-size: 0.75rem; overflow-x: auto;">
-              <span style="color: var(--text-faint); display: block; margin-bottom: 4px;">// Remediation Patch Applied</span>
-              <span style="color: var(--violet);">function</span> <span style="color: var(--cyan);">grantDoctorAccess</span>(bytes32 _recordId, address _doctor) <span style="color: var(--violet);">external</span> {
-                <span style="color: var(--red);">require</span>(records[_recordId].owner == msg.sender, <span style="color: var(--amber);">"Errors: Auth Failed"</span>);
-                records[_recordId].authorizedProviders[_doctor] = <span style="color: var(--violet);">true</span>;
-                <span style="color: var(--violet);">emit</span> <span style="color: var(--cyan);">AccessGranted</span>(_recordId, _doctor);
+            <div
+              style="background: rgba(2, 4, 8, 0.8); border: 1px solid rgba(255, 59, 92, 0.2); padding: 12px; font-family: var(--mono); font-size: 0.75rem; overflow-x: auto;">
+              <span style="color: var(--text-faint); display: block; margin-bottom: 4px;">// Remediation Patch
+                Applied</span>
+              <span style="color: var(--violet);">function</span> <span
+                style="color: var(--cyan);">grantDoctorAccess</span>(bytes32 _recordId, address _doctor) <span
+                style="color: var(--violet);">external</span> {
+              <span style="color: var(--red);">require</span>(records[_recordId].owner == msg.sender, <span
+                style="color: var(--amber);">"Errors: Auth Failed"</span>);
+              records[_recordId].authorizedProviders[_doctor] = <span style="color: var(--violet);">true</span>;
+              <span style="color: var(--violet);">emit</span> <span
+                style="color: var(--cyan);">AccessGranted</span>(_recordId, _doctor);
               }
             </div>
             <div style="margin-top: 5px;">
-              <a href="https://medium.com/@kareebsadab/w3d-security-report-c79cc07ca721" target="_blank" rel="noopener noreferrer" class="access-link-btn">
+              <a href="https://medium.com/@kareebsadab/w3d-security-report-c79cc07ca721" target="_blank"
+                rel="noopener noreferrer" class="access-link-btn">
                 <span>DECRYPT FULL ARCHIVE REPORT &rarr;</span>
               </a>
             </div>
