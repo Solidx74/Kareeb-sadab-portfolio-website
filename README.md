@@ -15,6 +15,31 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117)](https://www.linkedin.com/in/karib-sadab-43666a407/)
 [![GitHub](https://img.shields.io/badge/GitHub-Solidx74-ffffff?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117)](https://github.com/Solidx74)
 
+## `> npm run dev`
+
+This portfolio is now a **React + Vite** app with **Tailwind CSS** and **Framer Motion**.
+
+```bash
+npm install
+npm run dev      # local dev server
+npm run build    # production build → dist/
+npm run preview  # preview production build
+```
+
+Place your profile photo at `public/profile.png` (falls back to a generated avatar if missing).
+
+### 2026 Design System
+
+| Layer | Implementation |
+|---|---|
+| Glass-morphism 2.0 | Frosted panels with inner glow, gradient rim highlights |
+| Kinetic Typography | Hero title reacts to cursor + scroll blur/scale |
+| Bento Grid | Modular project cards with 3D perspective tilt on hover |
+| Scroll Breathe | Cards expand subtly as they enter the viewport |
+| Magnetic Cursor | Custom cursor with spring physics + button snap |
+| Spatial Sound | Subtle mechanical click via Web Audio API on buttons |
+| Atmosphere | Dark void core, violet/cyan bioluminescent accents, animated grain |
+
 </div>
 
 ---
