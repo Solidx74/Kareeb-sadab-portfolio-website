@@ -25,7 +25,7 @@ export function ContactSection() {
               C:\&gt; transmit-parameters --mode secure
             </div>
             <form
-              action="https://formspree.io/f/YOUR_ID"
+              action="https://formspree.io/f/xpqeypvd"
               method="POST"
               className="space-y-4"
             >
