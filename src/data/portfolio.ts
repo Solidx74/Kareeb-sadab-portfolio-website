@@ -43,9 +43,26 @@ export const kpis = [
   { value: 'SECURE', label: 'Security Posture', accent: 'violet' as const },
 ]
 
-export const techStack = [
-  'Python', 'C++', 'Solidity', 'React', 'FastAPI', 'TensorFlow',
-  'PyTorch', 'Docker', 'Linux', 'Burp Suite', 'MongoDB', 'SQL',
+export const quickLinks = [
+  { label: 'GitHub', href: profile.links.github, tag: 'SECURE' },
+  { label: 'LinkedIn', href: profile.links.linkedin, tag: 'ONLINE' },
+  { label: 'Medium', href: profile.links.medium, tag: 'FEED' },
+  { label: 'Email', href: `mailto:${profile.email}`, tag: 'ENCRYPTED' },
+  { label: 'Data Science', href: profile.links.dataScience, tag: 'PORTFOLIO' },
+  { label: 'Data Analysis', href: profile.links.dataAnalysis, tag: 'PORTFOLIO' },
+]
+
+export const skillsMatrix = {
+  languages: ['Python', 'C++', 'Solidity', 'JavaScript', 'SQL', 'Bash'],
+  security: ['Burp Suite', 'Linux', 'Docker', 'Git', 'Snort', 'JWT Analysis'],
+  aiData: ['TensorFlow', 'PyTorch', 'Pandas', 'scikit-learn', 'MongoDB', 'Tableau'],
+}
+
+export const activeVectors = [
+  'Detection pipelines & SIEM architecture',
+  'LLM security & ML threat detection',
+  'Cloud-native controls & hardening',
+  'Smart contract auditing & DeFi modeling',
 ]
 
 export const projects: Project[] = [
@@ -182,15 +199,6 @@ export const projects: Project[] = [
     category: 'analytics',
     href: 'https://github.com/Solidx74/Data-Professional-Survey-Analysis-Power-BI',
     span: 'md',
-    accent: 'violet',
-  },
-  {
-    id: 'w3d',
-    title: 'W3D CISO Command Framework',
-    description: 'Security governance mapping multi-signature command paths, risk evaluations, and server directory configurations.',
-    stack: ['Web3', 'Governance', 'Security'],
-    category: 'web3',
-    span: 'lg',
     accent: 'violet',
   },
   {

@@ -48,18 +48,17 @@ export function ProjectsSection() {
             key={f.id}
             data-magnetic
             onClick={() => setFilter(f.id)}
-            className={`
-              font-mono text-[0.62rem] uppercase tracking-wider px-4 py-2 rounded-xl border
-              transition-all duration-300
-              ${filter === f.id
-                ? 'border-violet-glow/50 text-violet-glow bg-violet-dim'
-                : 'border-white/10 text-slate-500 hover:border-cyan-glow/30 hover:text-cyan-glow'}
-            `}
+            className={`filter-tab ${filter === f.id ? 'filter-tab-active' : 'filter-tab-idle'}`}
           >
             {f.label}
           </button>
         ))}
       </div>
+
+      <p className="font-mono text-[0.6rem] text-slate-600 mb-4 tracking-wider">
+        // {filtered.length} DEPLOYMENT{filtered.length !== 1 ? 'S' : ''} ACTIVE
+        {filter !== 'all' && ` · FILTER: ${filter.toUpperCase()}`}
+      </p>
 
       <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 auto-rows-fr gap-4">
         <AnimatePresence mode="popLayout">

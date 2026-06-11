@@ -20,17 +20,19 @@ export default {
         },
         amber: {
           glow: '#ffb800',
+          dim: 'rgba(255, 184, 0, 0.08)',
         },
       },
       fontFamily: {
-        display: ['Orbitron', 'sans-serif'],
-        mono: ['Share Tech Mono', 'monospace'],
-        body: ['Rajdhani', 'sans-serif'],
+        display: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+        body: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
       },
       animation: {
         grain: 'grain 8s steps(10) infinite',
         pulseGlow: 'pulseGlow 3s ease-in-out infinite',
         blink: 'blink 2.5s ease-in-out infinite',
+        shimmerEdge: 'shimmerEdge 3s ease-in-out infinite',
       },
       keyframes: {
         grain: {
@@ -48,6 +50,10 @@ export default {
         blink: {
           '0%, 100%': { opacity: '1' },
           '50%': { opacity: '0.25' },
+        },
+        shimmerEdge: {
+          '0%, 100%': { opacity: '0.5', transform: 'scaleY(0.85)' },
+          '50%': { opacity: '1', transform: 'scaleY(1)' },
         },
       },
       backdropBlur: {

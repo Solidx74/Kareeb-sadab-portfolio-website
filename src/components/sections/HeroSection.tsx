@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 import { KineticTitle } from '../KineticTitle'
 import { BentoCard } from '../BentoCard'
-import { MagneticButton } from '../MagneticButton'
-import { profile, kpis } from '../../data/portfolio'
+import { profile, kpis, quickLinks } from '../../data/portfolio'
+import { useMechanicalClick } from '../../hooks/useMechanicalClick'
 
 const bootLines = [
   { status: 'ok', text: 'KERNEL :: security-matrix v4.2.1 initialized' },
@@ -13,14 +13,28 @@ const bootLines = [
   { status: 'ok', text: 'READY :: awaiting operator input ▌' },
 ]
 
+const kpiStripClass = {
+  green: 'kpi-strip-green',
+  cyan: 'kpi-strip-cyan',
+  violet: 'kpi-strip-violet',
+}
+
+const kpiValueClass = {
+  green: 'text-green-glow',
+  cyan: 'text-cyan-glow text-glow-cyan',
+  violet: 'text-violet-glow text-glow-violet',
+}
+
 export function HeroSection() {
+  const playClick = useMechanicalClick()
+
   return (
     <section id="command" className="relative pt-32 pb-20 px-4 sm:px-6 max-w-7xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, ease: [0.23, 1, 0.32, 1] }}
-        className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start"
+        className="grid lg:grid-cols-[1.2fr_0.8fr] gap-10 lg:gap-12 items-start"
       >
         <div>
           <p className="section-label mb-4">// SYS/01 — OPERATOR PROFILE</p>
@@ -39,7 +53,8 @@ export function HeroSection() {
                   alt="Operator Avatar"
                   className="w-full h-full object-cover grayscale contrast-125 brightness-90"
                   onError={(e) => {
-                    e.currentTarget.src = `https://ui-avatars.com/api/?name=KS&background=8b5cf6&color=fff&size=256`
+                    e.currentTarget.src =
+                      'https://ui-avatars.com/api/?name=KS&background=8b5cf6&color=fff&size=256'
                   }}
                 />
               </div>
@@ -54,46 +69,59 @@ export function HeroSection() {
               <p className="font-mono text-sm text-violet-glow border-l-2 border-violet-glow/50 pl-3">
                 {profile.title}
               </p>
-              <div className="flex flex-wrap gap-3 pt-2">
-                <MagneticButton href={profile.links.dataScience} variant="cyan">
-                  Data Science →
-                </MagneticButton>
-                <MagneticButton href={profile.links.dataAnalysis} variant="ghost">
-                  Data Analysis →
-                </MagneticButton>
-              </div>
             </div>
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 gap-4">
+        <div className="space-y-4">
           {kpis.map((kpi, i) => (
             <motion.div
               key={kpi.label}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 + i * 0.1 }}
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.15 + i * 0.08 }}
+              className={`kpi-strip ${kpiStripClass[kpi.accent]}`}
             >
-              <BentoCard span="sm" accent={kpi.accent}>
-                <div className="text-center flex-1 flex flex-col justify-center">
-                  <div
-                    className={`font-display text-2xl font-black mb-1 ${
-                      kpi.accent === 'cyan'
-                        ? 'text-cyan-glow text-glow-cyan'
-                        : kpi.accent === 'green'
-                          ? 'text-green-glow'
-                          : 'text-violet-glow text-glow-violet'
-                    }`}
-                  >
-                    {kpi.value}
-                  </div>
-                  <div className="font-mono text-[0.58rem] text-slate-500 uppercase tracking-wider">
-                    {kpi.label}
-                  </div>
-                </div>
-              </BentoCard>
+              <div className={`font-display text-2xl font-bold shrink-0 ${kpiValueClass[kpi.accent]}`}>
+                {kpi.value}
+              </div>
+              <div className="font-mono text-[0.62rem] text-slate-500 uppercase tracking-wider leading-snug">
+                {kpi.label}
+              </div>
             </motion.div>
           ))}
+
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.45 }}
+          >
+            <BentoCard span="sm" accent="cyan">
+              <div className="font-mono text-[0.62rem] text-cyan-glow uppercase tracking-wider mb-3">
+                Quick Links // Relay Channels
+              </div>
+              <div className="space-y-1.5">
+                {quickLinks.map((link) => (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    target={link.href.startsWith('mailto') ? undefined : '_blank'}
+                    rel="noopener noreferrer"
+                    data-magnetic
+                    onClick={playClick}
+                    className="quick-link-row group"
+                  >
+                    <span className="font-mono text-xs text-slate-300 group-hover:text-white transition-colors">
+                      {link.label}
+                    </span>
+                    <span className="font-mono text-[0.55rem] text-slate-600 group-hover:text-cyan-glow transition-colors">
+                      {link.tag} →
+                    </span>
+                  </a>
+                ))}
+              </div>
+            </BentoCard>
+          </motion.div>
         </div>
       </motion.div>
 

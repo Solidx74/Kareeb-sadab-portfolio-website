@@ -28,6 +28,28 @@ export function Web3Section() {
         </h2>
       </motion.div>
 
+      <div className="grid lg:grid-cols-2 gap-4 mb-4">
+        <BentoCard span="lg" accent="violet">
+          <h3 className="font-display text-lg font-bold text-white mb-3">
+            W3D CISO Command Framework
+          </h3>
+          <p className="text-sm text-slate-400 leading-relaxed">
+            Complete security governance administration mapping operations, multi-signature command
+            paths, risk evaluations, and server directory configurations built for W3D ecosystems.
+          </p>
+        </BentoCard>
+
+        <BentoCard span="lg" accent="amber">
+          <h3 className="font-display text-lg font-bold text-white mb-3">
+            Alien Worlds P2E Strategy
+          </h3>
+          <p className="text-sm text-slate-400 leading-relaxed">
+            Strategic player acquisition metrics review. Optimized conversion paths and smart contract
+            parameters under a $1,000 launch budget.
+          </p>
+        </BentoCard>
+      </div>
+
       <div className="grid lg:grid-cols-2 gap-4">
         <BentoCard span="lg" accent="violet">
           <h3 className="font-display text-lg font-bold text-white mb-3">

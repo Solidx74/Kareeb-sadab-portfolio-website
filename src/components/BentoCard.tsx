@@ -16,10 +16,10 @@ const spanClasses = {
 }
 
 const accentGlow = {
-  violet: 'hover:shadow-[0_0_40px_rgba(139,92,246,0.15)]',
-  cyan: 'hover:shadow-[0_0_40px_rgba(0,240,255,0.12)]',
-  green: 'hover:shadow-[0_0_40px_rgba(0,255,136,0.12)]',
-  amber: 'hover:shadow-[0_0_40px_rgba(255,184,0,0.12)]',
+  violet: 'hover:shadow-[0_0_40px_rgba(139,92,246,0.15)] bento-edge-violet',
+  cyan: 'hover:shadow-[0_0_40px_rgba(0,240,255,0.12)] bento-edge-cyan',
+  green: 'hover:shadow-[0_0_40px_rgba(0,255,136,0.12)] bento-edge-green',
+  amber: 'hover:shadow-[0_0_40px_rgba(255,184,0,0.12)] bento-edge-amber',
 }
 
 export function BentoCard({
