@@ -3,277 +3,90 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Kareeb Sadab — Security Engineer &amp; AI/ML Developer</title>
-<meta name="description" content="Kareeb Sadab — Security Engineer, AI/ML Developer, and Data Practitioner. BSc CSE at CUET, former CISO at W3D." />
+<title>Kareeb Sadab — Data Scientist &amp; ML/DL Engineer</title>
+<meta name="description" content="Kareeb Sadab — Data Scientist and Machine Learning / Deep Learning Engineer, with a parallel track in application security. BSc CSE at CUET, former CISO at W3D. Open to internships, research, and full-time roles." />
+<meta name="theme-color" content="#18181B">
+<link rel="canonical" href="https://ksportfolioweb.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kareeb Sadab — Data Scientist &amp; ML/DL Engineer">
+<meta property="og:description" content="BSc CSE at CUET and former CISO at W3D, building where security, AI, and data meet.">
+<meta property="og:image" content="https://ksportfolioweb.vercel.app/profile.jpg">
+<meta property="og:url" content="https://ksportfolioweb.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Solidx74">
+<meta name="twitter:title" content="Kareeb Sadab — Data Scientist &amp; ML/DL Engineer">
+<meta name="twitter:description" content="BSc CSE at CUET and former CISO at W3D, building where security, AI, and data meet.">
+<meta name="twitter:image" content="https://ksportfolioweb.vercel.app/profile.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2318181B'/%3E%3Ctext x='32' y='42' font-family='Arial, sans-serif' font-size='26' font-weight='700' fill='%232563EB' text-anchor='middle'%3EKS%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --primary:#18181B;
-    --on-primary:#FFFFFF;
-    --secondary:#3F3F46;
-    --accent:#2563EB;
-    --bg:#FAFAFA;
-    --fg:#09090B;
-    --muted:#E8ECF0;
-    --muted-text:#6B7280;
-    --border:#E4E4E7;
-    --surface:#FFFFFF;
-    --sec-security:#2563EB;
-    --sec-ai:#7C3AED;
-    --sec-data:#B45309;
-    --sec-web3:#0F766E;
-    --radius:14px;
-    --ease:cubic-bezier(.4,0,.2,1);
-  }
-  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;}
-  body{
-    background:var(--bg);
-    color:var(--fg);
-    font-family:'Open Sans',sans-serif;
-    line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-  }
-  h1,h2,h3,h4{font-family:'Poppins',sans-serif;color:var(--primary);letter-spacing:-0.01em;}
-  a{color:inherit;text-decoration:none;}
-  img{display:block;max-width:100%;}
-  ul{list-style:none;}
-  button{font-family:inherit;cursor:pointer;}
-  .container{max-width:1180px;margin:0 auto;padding:0 24px;}
-  .mono{font-family:'IBM Plex Mono',monospace;}
-
-  /* NAV */
-  #nav{
-    position:fixed; top:0; left:0; right:0; z-index:100;
-    background:rgba(250,250,250,.7);
-    backdrop-filter:blur(14px);
-    border-bottom:1px solid transparent;
-    transition:border-color .3s var(--ease), background .3s var(--ease);
-  }
-  #nav.scrolled{ background:rgba(250,250,250,.92); border-bottom-color:var(--border); }
-  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px;}
-  .nav-logo{font-family:'Poppins',sans-serif;font-weight:700;font-size:1.05rem;}
-  .nav-logo span{color:var(--accent);}
-  .nav-links{display:flex;gap:32px;}
-  .nav-links a{font-size:.88rem;font-weight:500;color:var(--secondary);transition:color .2s;}
-  .nav-links a:hover{color:var(--accent);}
-  .nav-cta{
-    font-size:.82rem; font-weight:600; padding:9px 18px; border-radius:8px;
-    background:var(--primary); color:#fff; transition:background .2s, transform .2s;
-  }
-  .nav-cta:hover{background:var(--accent); transform:translateY(-1px);}
-  .nav-toggle{display:none;}
-
-  /* HERO */
-  #hero{padding:168px 0 88px; position:relative; overflow:hidden;}
-  #hero::before{
-    content:''; position:absolute; top:-120px; right:-160px; width:520px; height:520px;
-    background:radial-gradient(circle,rgba(37,99,235,.10) 0%,transparent 70%);
-    pointer-events:none;
-  }
-  .hero-floaters{position:absolute; inset:0; pointer-events:none; overflow:hidden; z-index:0;}
-  .floater{
-    position:absolute; opacity:0; transform:rotate(-10deg); animation:floatIn .8s var(--ease) forwards, floatBob 5s ease-in-out infinite;
-  }
-  .floater svg{width:38px;height:38px;}
-  @keyframes floatIn{to{opacity:.16;}}
-  @keyframes floatBob{
-    0%,100%{transform:translateY(0) rotate(-8deg);}
-    50%{transform:translateY(-16px) rotate(6deg);}
-  }
-  @media(prefers-reduced-motion:reduce){
-    .floater{animation:floatIn .01ms forwards;}
-  }
-  @media(max-width:900px){ .hero-floaters{display:none;} }
-  .hero-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:64px; align-items:center; position:relative; z-index:1;}
-  .hero-eyebrow{
-    display:inline-flex; align-items:center; gap:8px;
-    font-family:'IBM Plex Mono',monospace; font-size:.74rem; letter-spacing:.14em; text-transform:uppercase;
-    color:var(--accent); margin-bottom:20px;
-  }
-  .hero-eyebrow::before{content:'';width:24px;height:1.5px;background:var(--accent);}
-  .hero-title{font-size:clamp(2.1rem,4.2vw,3.2rem); font-weight:700; line-height:1.12; margin-bottom:20px;}
-  .hero-title .hl{color:var(--accent);}
-  .hero-desc{font-size:1.05rem; color:var(--secondary); max-width:520px; margin-bottom:28px;}
-  .domain-legend{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:32px;}
-  .domain-pill{
-    display:inline-flex; align-items:center; gap:7px; font-size:.78rem; font-weight:600;
-    padding:6px 14px; border-radius:100px; border:1px solid var(--border); background:var(--surface);
-  }
-  .domain-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
-  .d-security{background:var(--sec-security);} .d-ai{background:var(--sec-ai);} .d-data{background:var(--sec-data);}
-  .hero-cta{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:32px;}
-  .btn{
-    display:inline-flex; align-items:center; gap:8px; padding:13px 26px; border-radius:9px;
-    font-size:.88rem; font-weight:600; transition:all .25s var(--ease);
-  }
-  .btn-primary{background:var(--primary); color:#fff;}
-  .btn-primary:hover{background:var(--accent); transform:translateY(-2px); box-shadow:0 10px 24px -8px rgba(37,99,235,.45);}
-  .btn-outline{border:1px solid var(--border); background:var(--surface);}
-  .btn-outline:hover{border-color:var(--accent); color:var(--accent); transform:translateY(-2px);}
-  .hero-socials{display:flex; gap:10px;}
-  .social-icon{
-    width:40px;height:40px; border-radius:10px; border:1px solid var(--border); background:var(--surface);
-    display:flex; align-items:center; justify-content:center; color:var(--secondary); transition:all .25s;
-  }
-  .social-icon:hover{border-color:var(--accent); color:var(--accent); transform:translateY(-2px);}
-  .social-icon svg{width:18px;height:18px;}
-
-  .hero-photo-wrap{position:relative;}
-  .hero-photo-card{
-    background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:20px;
-    box-shadow:0 24px 60px -30px rgba(0,0,0,.18);
-  }
-  .hero-photo{
-    width:100%; aspect-ratio:1/1; border-radius:14px; object-fit:cover; background:var(--muted);
-  }
-  .hero-photo-caption{display:flex; align-items:center; gap:8px; margin-top:16px; font-size:.82rem; color:var(--secondary);}
-  .pulse-dot{width:8px;height:8px;border-radius:50%;background:#16A34A; box-shadow:0 0 0 0 rgba(22,163,74,.5); animation:pulse 2s infinite;}
-  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(22,163,74,.45);}70%{box-shadow:0 0 0 8px rgba(22,163,74,0);}100%{box-shadow:0 0 0 0 rgba(22,163,74,0);}}
-
-  .stats-bar{background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);}
-  .stats-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:32px; padding:40px 0;}
-  .stat-item{text-align:center;}
-  .stat-num{font-family:'Poppins',sans-serif; font-weight:700; font-size:2rem; color:var(--accent);}
-  .stat-label{font-size:.78rem; color:var(--muted-text); letter-spacing:.04em; text-transform:uppercase; margin-top:4px;}
-
-  section{padding:96px 0;}
-  .section-eyebrow{
-    font-family:'IBM Plex Mono',monospace; font-size:.74rem; letter-spacing:.14em; text-transform:uppercase;
-    color:var(--accent); margin-bottom:10px; display:flex; align-items:center; gap:10px;
-  }
-  .section-eyebrow::before{content:'';width:20px;height:1.5px;background:var(--accent);}
-  .section-title{font-size:clamp(1.5rem,3vw,2.1rem); font-weight:700; margin-bottom:14px;}
-  .section-desc{color:var(--secondary); max-width:600px; margin-bottom:48px; font-size:.98rem;}
-
-  /* reveal */
-  .reveal{opacity:0; transform:translateY(24px); transition:opacity .7s var(--ease), transform .7s var(--ease);}
-  .reveal.visible{opacity:1; transform:none;}
-
-  /* EXPERIENCE */
-  .timeline-item{position:relative; padding-left:32px; border-left:2px solid var(--border);}
-  .timeline-item::before{
-    content:''; position:absolute; left:-7px; top:6px; width:12px; height:12px; border-radius:50%;
-    background:var(--accent); border:3px solid var(--bg);
-  }
-  .exp-head{display:flex; flex-wrap:wrap; align-items:baseline; gap:8px; margin-bottom:4px;}
-  .exp-title{font-size:1.15rem; font-weight:700;}
-  .exp-org{color:var(--accent); font-weight:600;}
-  .exp-meta{color:var(--muted-text); font-size:.85rem; margin-bottom:14px;}
-  .exp-list li{position:relative; padding-left:18px; margin-bottom:10px; color:var(--secondary); font-size:.94rem;}
-  .exp-list li::before{content:''; position:absolute; left:0; top:9px; width:5px; height:5px; border-radius:50%; background:var(--accent);}
-
-  /* SKILLS */
-  .skills-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
-  .skill-card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:24px; transition:box-shadow .25s, transform .25s;}
-  .skill-card:hover{box-shadow:0 16px 36px -20px rgba(0,0,0,.15); transform:translateY(-3px);}
-  .skill-card h3{font-size:.98rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;}
-  .skill-card h3 .dot{width:8px;height:8px;border-radius:50%;}
-  .chip-row{display:flex; flex-wrap:wrap; gap:8px;}
-  .chip{font-size:.78rem; padding:5px 12px; border-radius:100px; background:var(--muted); color:var(--secondary); font-weight:500;}
-
-  /* PROJECTS */
-  .filter-bar{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:36px;}
-  .filter-btn{
-    font-size:.82rem; font-weight:600; padding:9px 18px; border-radius:100px;
-    border:1px solid var(--border); background:var(--surface); color:var(--secondary); transition:all .2s;
-  }
-  .filter-btn:hover{border-color:var(--accent); color:var(--accent);}
-  .filter-btn.active{background:var(--primary); border-color:var(--primary); color:#fff;}
-  .project-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
-  .project-card{
-    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
-    padding:26px; display:flex; flex-direction:column; transition:box-shadow .3s, transform .3s;
-    opacity:1; transform:none;
-  }
-  .project-card:hover{box-shadow:0 20px 44px -22px rgba(0,0,0,.18); transform:translateY(-4px);}
-  .project-tag{
-    display:inline-flex; align-items:center; gap:6px; font-size:.68rem; font-weight:700;
-    text-transform:uppercase; letter-spacing:.06em; padding:4px 10px; border-radius:6px;
-    margin-bottom:14px; align-self:flex-start;
-  }
-  .tag-security{background:rgba(37,99,235,.1); color:var(--sec-security);}
-  .tag-ai{background:rgba(124,58,237,.1); color:var(--sec-ai);}
-  .tag-data{background:rgba(180,83,9,.1); color:var(--sec-data);}
-  .tag-web3{background:rgba(15,118,110,.1); color:var(--sec-web3);}
-  .project-card h3{font-size:1.05rem; margin-bottom:10px;}
-  .project-card p{font-size:.88rem; color:var(--secondary); margin-bottom:16px; flex:1;}
-  .project-stack{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:18px;}
-  .stack-tag{font-size:.7rem; color:var(--muted-text); padding:3px 9px; border:1px solid var(--border); border-radius:5px;}
-  .project-links{display:flex; gap:14px; margin-top:auto;}
-  .project-links a{font-size:.82rem; font-weight:600; color:var(--accent); display:inline-flex; align-items:center; gap:5px;}
-  .project-links a:hover{text-decoration:underline;}
-
-  /* CERTS */
-  .certs-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px;}
-  .cert-card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:26px;}
-  .cert-card h3{font-size:.95rem; margin-bottom:14px;}
-  .cert-list li{display:flex; align-items:center; gap:10px; margin-bottom:12px; font-size:.9rem; color:var(--secondary);}
-  .cert-check{width:18px;height:18px; border-radius:50%; background:rgba(37,99,235,.1); color:var(--accent); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
-  .cert-check svg{width:11px;height:11px;}
-
-  /* CONTACT */
-  .contact-grid{display:grid; grid-template-columns:1fr 1.2fr; gap:48px;}
-  .contact-detail{display:flex; align-items:center; gap:14px; padding:16px 0; border-bottom:1px solid var(--border);}
-  .contact-detail:last-child{border-bottom:none;}
-  .contact-icon{width:38px;height:38px; border-radius:9px; background:rgba(37,99,235,.08); color:var(--accent); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
-  .contact-icon svg{width:17px;height:17px;}
-  .contact-label{font-size:.72rem; color:var(--muted-text); text-transform:uppercase; letter-spacing:.06em; margin-bottom:2px;}
-  .contact-value{font-size:.94rem; font-weight:600;}
-  .contact-value a:hover{color:var(--accent);}
-
-  .form-card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:32px;}
-  .form-row{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;}
-  .form-group{display:flex; flex-direction:column; gap:6px; margin-bottom:16px;}
-  .form-label{font-size:.74rem; font-weight:600; color:var(--secondary); text-transform:uppercase; letter-spacing:.04em;}
-  .form-input, .form-textarea{
-    border:1px solid var(--border); border-radius:9px; padding:12px 14px; font-family:inherit; font-size:.92rem;
-    background:var(--bg); transition:border-color .2s, box-shadow .2s; outline:none;
-  }
-  .form-input:focus, .form-textarea:focus{border-color:var(--accent); box-shadow:0 0 0 3px rgba(37,99,235,.12);}
-  .form-textarea{resize:vertical; min-height:120px;}
-  .btn-submit{width:100%; justify-content:center; border:none;}
-
-  footer{border-top:1px solid var(--border); padding:32px 0;}
-  .footer-inner{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; font-size:.82rem; color:var(--muted-text);}
-  .footer-inner strong{color:var(--primary);}
-
-  @media(max-width:900px){
-    .hero-grid{grid-template-columns:1fr;}
-    .hero-photo-wrap{order:-1; max-width:280px; margin:0 auto;}
-    .stats-grid{grid-template-columns:repeat(2,1fr);}
-    .skills-grid{grid-template-columns:1fr 1fr;}
-    .project-grid{grid-template-columns:1fr 1fr;}
-    .certs-grid{grid-template-columns:1fr;}
-    .contact-grid{grid-template-columns:1fr;}
-  }
-  @media(max-width:640px){
-    .nav-links{display:none;}
-    .skills-grid{grid-template-columns:1fr;}
-    .project-grid{grid-template-columns:1fr;}
-    .form-row{grid-template-columns:1fr;}
-    .stats-grid{grid-template-columns:1fr 1fr;}
-  }
-  @media(prefers-reduced-motion:reduce){
-    *,*::before,*::after{transition-duration:.01ms !important; animation-duration:.01ms !important;}
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kareeb Sadab",
+  "jobTitle": "Data Scientist & Machine Learning / Deep Learning Engineer",
+  "url": "https://ksportfolioweb.vercel.app",
+  "image": "https://ksportfolioweb.vercel.app/profile.jpg",
+  "email": "mailto:kareebsadab@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Chattogram",
+    "addressCountry": "BD"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Chittagong University of Engineering & Technology"
+  },
+  "sameAs": [
+    "https://github.com/Solidx74",
+    "https://www.linkedin.com/in/karib-sadab-43666a407/",
+    "https://x.com/Solidx74",
+    "https://medium.com/@kareebsadab"
+  ]
+}
+</script>
 </head>
 <body>
 
 <header id="nav">
   <div class="container nav-inner">
     <a href="#hero" class="nav-logo">Kareeb <span>Sadab</span></a>
-    <nav class="nav-links">
+    <nav class="nav-links" aria-label="Primary">
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#certifications">Certifications</a>
+      <a href="#portfolios">Portfolios</a>
+      <a href="#publications">Writing</a>
       <a href="#contact">Contact</a>
     </nav>
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+    </button>
     <a href="#contact" class="nav-cta">Get in touch</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#portfolios">Portfolios</a>
+      <a href="#publications">Writing</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -281,47 +94,55 @@
   <!-- HERO -->
   <section id="hero">
     <div class="hero-floaters" aria-hidden="true">
-      <div class="floater" style="left:12%; top:18%; color:var(--sec-security); animation-delay:.1s, 0s;">
+      <div class="floater" style="left:12%; top:18%; background:rgba(37,99,235,.16); color:var(--sec-security); box-shadow:0 12px 28px -12px rgba(37,99,235,.55); animation-delay:.1s, 0s;">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
       </div>
-      <div class="floater" style="left:38%; top:68%; color:var(--sec-ai); animation-delay:.3s, .6s;">
+      <div class="floater" style="left:38%; top:70%; background:rgba(124,58,237,.16); color:var(--sec-ai); box-shadow:0 12px 28px -12px rgba(124,58,237,.55); animation-delay:.3s, .6s;">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
       </div>
-      <div class="floater" style="left:64%; top:14%; color:var(--sec-data); animation-delay:.5s, 1.1s;">
+      <div class="floater" style="left:64%; top:12%; background:rgba(180,83,9,.16); color:var(--sec-data); box-shadow:0 12px 28px -12px rgba(180,83,9,.5); animation-delay:.5s, 1.1s;">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6a8 3 0 0 0 16 0V5M4 11v6a8 3 0 0 0 16 0v-6"/></svg>
       </div>
-      <div class="floater" style="left:86%; top:62%; color:var(--sec-web3); animation-delay:.7s, 1.6s;">
+      <div class="floater" style="left:88%; top:58%; background:rgba(15,118,110,.16); color:var(--sec-web3); box-shadow:0 12px 28px -12px rgba(15,118,110,.5); animation-delay:.7s, 1.6s;">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 17H7A5 5 0 0 1 7 7h2M15 7h2a5 5 0 1 1 0 10h-2M8 12h8"/></svg>
       </div>
-      <div class="floater" style="left:24%; top:42%; color:var(--secondary); animation-delay:.2s, 2.1s;">
+      <div class="floater" style="left:22%; top:44%; background:rgba(219,39,119,.16); color:var(--sec-code); box-shadow:0 12px 28px -12px rgba(219,39,119,.5); animation-delay:.2s, 2.1s;">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
       </div>
     </div>
     <div class="container hero-grid">
       <div class="reveal visible">
-        <div class="hero-eyebrow">Security &amp; AI Portfolio</div>
-        <h1 class="hero-title">Building where <span class="hl">security</span>, <span class="hl">AI</span>, and <span class="hl">data</span> meet.</h1>
+        <div class="hero-eyebrow">Data Scientist &middot; ML / DL Engineer &middot; Security Practitioner</div>
+        <h1 class="hero-title">Building <span class="hl">data science</span> and <span class="hl">machine learning / deep learning</span> systems — with a security-first mindset.</h1>
         <p class="hero-desc">
-          CS undergraduate at CUET and former CISO at W3D. I split my time between application security and
-          threat modeling, machine learning pipelines, and data analytics — usually all three on the same project.
+          CS undergraduate at CUET specializing in data science, machine learning, and deep learning, with a
+          parallel track in application security as a former CISO. I build predictive models, ML/DL pipelines,
+          and data-driven tools — and know how to secure what I ship.
         </p>
         <div class="domain-legend">
+          <span class="domain-pill"><span class="domain-dot d-data"></span>Data Science</span>
+          <span class="domain-pill"><span class="domain-dot d-ai"></span>Machine Learning &amp; Deep Learning</span>
           <span class="domain-pill"><span class="domain-dot d-security"></span>Security Engineering</span>
-          <span class="domain-pill"><span class="domain-dot d-ai"></span>AI / Machine Learning</span>
-          <span class="domain-pill"><span class="domain-dot d-data"></span>Data &amp; Analytics</span>
         </div>
         <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-outline">Get in touch</a>
+          <a href="#projects" class="btn btn-primary" aria-label="View Projects">View Projects</a>
+          <a href="resume.pdf" class="btn btn-outline" download aria-label="Download Resume (PDF)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline" aria-label="Get in touch">Get in touch</a>
         </div>
         <div class="hero-socials">
-          <a class="social-icon" href="https://github.com/Solidx74" target="_blank" rel="noopener" aria-label="GitHub">
+          <a class="social-icon" href="https://github.com/Solidx74" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
           </a>
-          <a class="social-icon" href="https://www.linkedin.com/in/karib-sadab-43666a407/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <a class="social-icon" href="https://www.linkedin.com/in/karib-sadab-43666a407/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           </a>
-          <a class="social-icon" href="https://medium.com/@kareebsadab" target="_blank" rel="noopener" aria-label="Medium">
+          <a class="social-icon" href="https://x.com/Solidx74" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a class="social-icon" href="https://medium.com/@kareebsadab" target="_blank" rel="noopener noreferrer" aria-label="Medium">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
           </a>
           <a class="social-icon" href="mailto:kareebsadab@gmail.com" aria-label="Email">
@@ -331,7 +152,10 @@
       </div>
       <div class="hero-photo-wrap reveal visible">
         <div class="hero-photo-card">
-          <img class="hero-photo" src="profile.jpg" alt="Kareeb Sadab" onerror="this.style.display='none'">
+          <div class="photo-frame" id="photoFrame">
+            <img class="hero-photo" src="profile.jpg" alt="Kareeb Sadab" loading="lazy" onerror="document.getElementById('photoFrame').classList.add('no-photo')">
+            <div class="photo-fallback" aria-hidden="true">KS</div>
+          </div>
           <div class="hero-photo-caption"><span class="pulse-dot"></span> Chattogram, Bangladesh &middot; Open to opportunities</div>
         </div>
       </div>
@@ -341,19 +165,19 @@
   <!-- STATS -->
   <div class="stats-bar">
     <div class="container stats-grid">
-      <div class="stat-item reveal"><div class="stat-num">15+</div><div class="stat-label">Projects Shipped</div></div>
-      <div class="stat-item reveal"><div class="stat-num">#938</div><div class="stat-label">picoCTF Worldwide</div></div>
-      <div class="stat-item reveal"><div class="stat-num">1</div><div class="stat-label">CISO Role @ W3D</div></div>
-      <div class="stat-item reveal"><div class="stat-num">3</div><div class="stat-label">Certifications</div></div>
+      <div class="stat-item reveal"><div class="stat-num" data-count="15" data-suffix="+">0</div><div class="stat-label">Projects Shipped</div></div>
+      <div class="stat-item reveal"><div class="stat-num" data-count="938" data-prefix="#">#0</div><div class="stat-label">picoCTF Worldwide</div></div>
+      <div class="stat-item reveal"><div class="stat-num" data-count="1" data-suffix=" Year+">0 Year+</div><div class="stat-label">CISO Role @ W3D</div></div>
+      <div class="stat-item reveal"><div class="stat-num" data-count="3">0</div><div class="stat-label">Certifications</div></div>
     </div>
   </div>
 
   <!-- EXPERIENCE -->
   <section id="experience">
     <div class="container">
-      <div class="section-eyebrow reveal">Career</div>
+      <div class="section-eyebrow reveal">Career &amp; Education</div>
       <h2 class="section-title reveal">Experience</h2>
-      <p class="section-desc reveal">Security leadership across community-driven Web3 products.</p>
+      <p class="section-desc reveal">Security leadership across community-driven Web3 products, alongside a CS degree in progress.</p>
       <div class="timeline-item reveal">
         <div class="exp-head">
           <span class="exp-title">Chief Information Security Officer (CISO)</span>
@@ -366,6 +190,14 @@
           <li>Led an SEO and security audit of the agency's own web presence, producing a prioritized action plan and following up with implemented fixes.</li>
         </ul>
       </div>
+      <div class="timeline-item reveal">
+        <div class="exp-head">
+          <span class="exp-title">B.Sc. in Computer Science &amp; Engineering</span>
+          <span class="exp-org">CUET</span>
+        </div>
+        <div class="exp-meta">Chittagong University of Engineering &amp; Technology &middot; In Progress</div>
+        <p class="edu-detail">Coursework and project work spanning data structures &amp; algorithms, machine learning, databases, and software engineering — alongside the security and AI/ML work above.</p>
+      </div>
     </div>
   </section>
 
@@ -374,22 +206,14 @@
     <div class="container">
       <div class="section-eyebrow reveal">Capabilities</div>
       <h2 class="section-title reveal">Technical Skills</h2>
-      <p class="section-desc reveal">Organized by the three practices this portfolio spans.</p>
+      <p class="section-desc reveal">Led by data science and ML/DL — the security practice sits alongside it.</p>
       <div class="skills-grid">
         <div class="skill-card reveal">
-          <h3><span class="dot" style="background:var(--sec-security)"></span>Security</h3>
-          <div class="chip-row">
-            <span class="chip">Threat Modeling</span><span class="chip">Vulnerability Assessment</span>
-            <span class="chip">Burp Suite</span><span class="chip">OWASP</span><span class="chip">Secure SDLC</span>
-            <span class="chip">SIEM</span><span class="chip">JWT Analysis</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <h3><span class="dot" style="background:var(--sec-ai)"></span>AI / ML</h3>
+          <h3><span class="dot" style="background:var(--sec-ai)"></span>Data Science, ML &amp; DL</h3>
           <div class="chip-row">
             <span class="chip">Python</span><span class="chip">TensorFlow</span><span class="chip">PyTorch</span>
-            <span class="chip">Scikit-learn</span><span class="chip">Pandas / NumPy</span><span class="chip">NLP</span>
-            <span class="chip">Prompt Engineering</span><span class="chip">RAG</span>
+            <span class="chip">Scikit-learn</span><span class="chip">Deep Learning</span><span class="chip">Pandas / NumPy</span>
+            <span class="chip">NLP</span><span class="chip">Prompt Engineering</span><span class="chip">RAG</span>
           </div>
         </div>
         <div class="skill-card reveal">
@@ -419,6 +243,14 @@
             <span class="chip">Solidity</span><span class="chip">Solana</span><span class="chip">IPFS</span>
           </div>
         </div>
+        <div class="skill-card reveal">
+          <h3><span class="dot" style="background:var(--sec-security)"></span>Security</h3>
+          <div class="chip-row">
+            <span class="chip">Threat Modeling</span><span class="chip">Vulnerability Assessment</span>
+            <span class="chip">Burp Suite</span><span class="chip">OWASP</span><span class="chip">Secure SDLC</span>
+            <span class="chip">SIEM</span><span class="chip">JWT Analysis</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -430,12 +262,12 @@
       <h2 class="section-title reveal">Projects</h2>
       <p class="section-desc reveal">Filter by practice area, or browse everything below.</p>
 
-      <div class="filter-bar reveal">
-        <button class="filter-btn active" data-f="all">All</button>
-        <button class="filter-btn" data-f="security">Security</button>
-        <button class="filter-btn" data-f="ai">AI / ML</button>
-        <button class="filter-btn" data-f="data">Data</button>
-        <button class="filter-btn" data-f="web3">Web3</button>
+      <div class="filter-bar reveal" role="group" aria-label="Filter projects by category">
+        <button class="filter-btn active" data-f="all" aria-pressed="true">All</button>
+        <button class="filter-btn" data-f="ai" aria-pressed="false">AI / ML</button>
+        <button class="filter-btn" data-f="data" aria-pressed="false">Data</button>
+        <button class="filter-btn" data-f="web3" aria-pressed="false">Web3</button>
+        <button class="filter-btn" data-f="security" aria-pressed="false">Security</button>
       </div>
 
       <div class="project-grid" id="project-grid">
@@ -445,7 +277,7 @@
           <h3>SIEM Log Pipeline + AI Anomaly Detection</h3>
           <p>Real-time log parsing and feature extraction feeding Isolation Forest and One-Class SVM models to flag anomalous activity.</p>
           <div class="project-stack"><span class="stack-tag">Python</span><span class="stack-tag">Pandas</span><span class="stack-tag">Isolation Forest</span></div>
-          <div class="project-links"><a href="https://github.com/Solidx74/SIEM-Log-Pipeline-with-AI-Based-Anomaly-Detection" target="_blank">Code →</a></div>
+          <div class="project-links"><a href="https://github.com/Solidx74/SIEM-Log-Pipeline-with-AI-Based-Anomaly-Detection" target="_blank" rel="noopener noreferrer">Code →</a></div>
         </div>
 
         <div class="project-card reveal" data-cat="security">
@@ -453,7 +285,7 @@
           <h3>Cybersecurity Mini Projects</h3>
           <p>A small Python security toolkit — password auditor, port scanner, DNS lookup, JWT inspector, hash/hex tools, and a Windows event log parser.</p>
           <div class="project-stack"><span class="stack-tag">Python</span><span class="stack-tag">CLI</span></div>
-          <div class="project-links"><a href="https://github.com/Solidx74/Cybersecurity-mini-projects" target="_blank">Code →</a></div>
+          <div class="project-links"><a href="https://github.com/Solidx74/Cybersecurity-mini-projects" target="_blank" rel="noopener noreferrer">Code →</a></div>
         </div>
 
         <div class="project-card reveal" data-cat="security">
@@ -461,15 +293,17 @@
           <h3>Harold Health Security Audit</h3>
           <p>Identified and remediated a critical broken-access-control vulnerability in a patient-provider credential registry, patched with strict owner validation.</p>
           <div class="project-stack"><span class="stack-tag">Solidity</span><span class="stack-tag">Audit</span></div>
-          <div class="project-links"><a href="https://medium.com/@kareebsadab/w3d-security-report-c79cc07ca721" target="_blank">Report →</a></div>
+          <div class="project-links"><a href="https://medium.com/@kareebsadab/w3d-security-report-c79cc07ca721" target="_blank" rel="noopener noreferrer">Report →</a></div>
         </div>
 
         <div class="project-card reveal" data-cat="ai">
+          <span class="live-badge"><span class="pulse-dot"></span>Live</span>
+          <span class="featured-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>Featured</span>
           <span class="project-tag tag-ai">AI / ML</span>
           <h3>AI Resume Analyzer / BetteResume-ai</h3>
           <p>A REST API and full-stack app that parses resumes against a job description using NLP/LLM calls, scores ATS fit, and generates targeted feedback.</p>
           <div class="project-stack"><span class="stack-tag">FastAPI</span><span class="stack-tag">React</span><span class="stack-tag">MongoDB</span></div>
-          <div class="project-links"><a href="https://github.com/Solidx74/BetteResume-ai" target="_blank">Code →</a><a href="https://bette-resume-ai.vercel.app" target="_blank">Live →</a></div>
+          <div class="project-links"><a href="https://github.com/Solidx74/BetteResume-ai" target="_blank" rel="noopener noreferrer">Code →</a><a href="https://bette-resume-ai.vercel.app" target="_blank" rel="noopener noreferrer">Live →</a></div>
         </div>
 
         <div class="project-card reveal" data-cat="ai">
@@ -477,7 +311,7 @@
           <h3>Customer Churn Prediction</h3>
           <p>Data cleaning, feature engineering, and model training/evaluation, deployed behind a Dockerized Flask API.</p>
           <div class="project-stack"><span class="stack-tag">Scikit-learn</span><span class="stack-tag">Flask</span><span class="stack-tag">Docker</span></div>
-          <div class="project-links"><a href="https://github.com/Solidx74/Customer-Churn-Analysis-and-Prediction-System" target="_blank">Code →</a></div>
+          <div class="project-links"><a href="https://github.com/Solidx74/Customer-Churn-Analysis-and-Prediction-System" target="_blank" rel="noopener noreferrer">Code →</a></div>
         </div>
 
         <div class="project-card reveal" data-cat="ai">
@@ -485,7 +319,7 @@
           <h3>Academic Performance Prediction</h3>
           <p>ML pipeline predicting student outcomes from behavioral and academic data using a Random Forest classifier.</p>
           <div class="project-stack"><span class="stack-tag">Random Forest</span><span class="stack-tag">Pandas</span></div>
-          <div class="project-links"><a href="https://github.com/Solidx74/Academic-Performance-ML-Pipeline" target="_blank">Code →</a></div>
+          <div class="project-links"><a href="https://github.com/Solidx74/Academic-Performance-ML-Pipeline" target="_blank" rel="noopener noreferrer">Code →</a></div>
         </div>
 
         <div class="project-card reveal" data-cat="ai">
@@ -493,7 +327,7 @@
           <h3>Loan Approval Prediction</h3>
           <p>Classification pipeline for credit-risk assessment, comparing SVM and Decision Tree models.</p>
           <div class="project-stack"><span class="stack-tag">SVM</span><span class="stack-tag">Decision Tree</span></div>
-          <div class="project-links"><a href="https://github.com/Solidx74/Loan-Approval-Prediction-using-Machine-Learning" target="_blank">Code →</a></div>
+          <div class="project-links"><a href="https://github.com/Solidx74/Loan-Approval-Prediction-using-Machine-Learning" target="_blank" rel="noopener noreferrer">Code →</a></div>
         </div>
 
         <div class="project-card reveal" data-cat="ai">
@@ -501,7 +335,7 @@
           <h3>RNN Name Classifier</h3>
           <p>Character-level RNN built from scratch in PyTorch with custom training vectors for name/nationality classification.</p>
           <div class="project-stack"><span class="stack-tag">PyTorch</span><span class="stack-tag">NLP</span></div>
-          <div class="project-links"><a href="https://github.com/Solidx74/Name-Classification-App-RNNproject" target="_blank">Code →</a></div>
+          <div class="project-links"><a href="https://github.com/Solidx74/Name-Classification-App-RNNproject" target="_blank" rel="noopener noreferrer">Code →</a></div>
         </div>
 
         <div class="project-card reveal" data-cat="data">
@@ -509,7 +343,7 @@
           <h3>Automated Crypto Market Tracker</h3>
           <p>CoinGecko API integration tracking BTC, ETH, XRP, DOGE, and BNB with historical Excel storage and automated visual reporting.</p>
           <div class="project-stack"><span class="stack-tag">API</span><span class="stack-tag">Pandas</span><span class="stack-tag">Matplotlib</span></div>
-          <div class="project-links"><a href="https://github.com/Solidx74/Automated-Crypto-Tracker" target="_blank">Code →</a></div>
+          <div class="project-links"><a href="https://github.com/Solidx74/Automated-Crypto-Tracker" target="_blank" rel="noopener noreferrer">Code →</a></div>
         </div>
 
         <div class="project-card reveal" data-cat="data">
@@ -517,7 +351,7 @@
           <h3>COVID-19 Data Exploration</h3>
           <p>Global COVID-19 dataset analysis in Microsoft SQL Server — data cleaning, joins, and dashboard-ready aggregation.</p>
           <div class="project-stack"><span class="stack-tag">SQL Server</span><span class="stack-tag">Tableau</span></div>
-          <div class="project-links"><a href="https://github.com/Solidx74/Covid19-Data-Exploration" target="_blank">Code →</a></div>
+          <div class="project-links"><a href="https://github.com/Solidx74/Covid19-Data-Exploration" target="_blank" rel="noopener noreferrer">Code →</a></div>
         </div>
 
         <div class="project-card reveal" data-cat="data">
@@ -525,7 +359,7 @@
           <h3>Nashville Housing — Data Cleaning</h3>
           <p>Standardized inconsistent formats and removed duplicates in a real-world housing dataset using SQL Server.</p>
           <div class="project-stack"><span class="stack-tag">SQL Server</span><span class="stack-tag">ETL</span></div>
-          <div class="project-links"><a href="https://github.com/Solidx74/NashvilleHousing-DataCleaning-Project" target="_blank">Code →</a></div>
+          <div class="project-links"><a href="https://github.com/Solidx74/NashvilleHousing-DataCleaning-Project" target="_blank" rel="noopener noreferrer">Code →</a></div>
         </div>
 
         <div class="project-card reveal" data-cat="data">
@@ -533,7 +367,7 @@
           <h3>Power BI: Data Professional Survey</h3>
           <p>Interactive dashboard profiling global data-professional salary benchmarks, language preferences, and demographics.</p>
           <div class="project-stack"><span class="stack-tag">Power BI</span><span class="stack-tag">DAX</span></div>
-          <div class="project-links"><a href="https://github.com/Solidx74/Data-Professional-Survey-Analysis-Power-BI" target="_blank">Code →</a></div>
+          <div class="project-links"><a href="https://github.com/Solidx74/Data-Professional-Survey-Analysis-Power-BI" target="_blank" rel="noopener noreferrer">Code →</a></div>
         </div>
 
         <div class="project-card reveal" data-cat="data">
@@ -541,7 +375,7 @@
           <h3>Movies Correlation Project</h3>
           <p>Explored relationships between budget, gross revenue, runtime, and ratings — heatmaps and scatter plots to surface revenue drivers.</p>
           <div class="project-stack"><span class="stack-tag">Seaborn</span><span class="stack-tag">Matplotlib</span></div>
-          <div class="project-links"><a href="https://github.com/Solidx74/Movies-Correlation-Project" target="_blank">Code →</a></div>
+          <div class="project-links"><a href="https://github.com/Solidx74/Movies-Correlation-Project" target="_blank" rel="noopener noreferrer">Code →</a></div>
         </div>
 
         <div class="project-card reveal" data-cat="web3">
@@ -549,7 +383,7 @@
           <h3>CredChain-Nexus</h3>
           <p>Blockchain-based academic credential verification system built for Bangladesh's education ecosystem.</p>
           <div class="project-stack"><span class="stack-tag">Solidity</span><span class="stack-tag">Supabase</span><span class="stack-tag">IPFS</span></div>
-          <div class="project-links"><a href="https://github.com/Solidx74/Credchain-Nexus" target="_blank">Code →</a></div>
+          <div class="project-links"><a href="https://github.com/Solidx74/Credchain-Nexus" target="_blank" rel="noopener noreferrer">Code →</a></div>
         </div>
 
         <div class="project-card reveal" data-cat="web3">
@@ -557,7 +391,7 @@
           <h3>PitchIt AI</h3>
           <p>AI sponsorship-outreach generator that pulls live research through Firecrawl and Tavily before drafting each pitch.</p>
           <div class="project-stack"><span class="stack-tag">LLMs</span><span class="stack-tag">Next.js</span><span class="stack-tag">Supabase</span></div>
-          <div class="project-links"><a href="#" target="_blank">Code →</a></div>
+          <div class="project-links"><span class="stack-tag" style="opacity:.7;">Repo coming soon</span></div>
         </div>
 
       </div>
@@ -590,12 +424,82 @@
     </div>
   </section>
 
+  <!-- SPECIALIZED PORTFOLIOS -->
+  <section id="portfolios">
+    <div class="container">
+      <div class="section-eyebrow reveal">Explore More</div>
+      <h2 class="section-title reveal">Specialized Portfolios</h2>
+      <p class="section-desc reveal">Deeper, dedicated write-ups for the two data practices this site only summarizes — each with its own live site, project write-ups, and repo links.</p>
+      <div class="portfolio-grid">
+        <a class="portfolio-card reveal" href="https://solidx74.github.io/ksda.github.io/" target="_blank" rel="noopener noreferrer">
+          <div class="portfolio-icon" style="background:rgba(180,83,9,.1); color:var(--sec-data);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg>
+          </div>
+          <div class="portfolio-body">
+            <span class="project-tag tag-data">Data Analysis</span>
+            <h3>Data Analysis Portfolio</h3>
+            <p>SQL, dashboards, and exploratory-analysis case studies with full repo links for every project.</p>
+          </div>
+          <span class="portfolio-link">Visit portfolio
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </span>
+        </a>
+        <a class="portfolio-card reveal" href="https://solidx74.github.io/ksds.github.io/" target="_blank" rel="noopener noreferrer" style="transition-delay:.08s;">
+          <div class="portfolio-icon" style="background:rgba(124,58,237,.1); color:var(--sec-ai);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+          </div>
+          <div class="portfolio-body">
+            <span class="project-tag tag-ai">Data Science</span>
+            <h3>Data Science Portfolio</h3>
+            <p>Machine learning models, agent systems, and applied-ML case studies with source and demo links.</p>
+          </div>
+          <span class="portfolio-link">Visit portfolio
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <div class="container">
+      <div class="section-eyebrow reveal">Writing</div>
+      <h2 class="section-title reveal">Publications &amp; Articles</h2>
+      <p class="section-desc reveal">Security write-ups and AI/ML articles, published on Medium.</p>
+      <div class="pub-grid">
+        <a class="pub-card reveal" href="https://medium.com/@kareebsadab/w3d-security-report-c79cc07ca721" target="_blank" rel="noopener noreferrer">
+          <div class="pub-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div>
+          <div class="pub-body">
+            <h3>W3D / Harold Health Security Report</h3>
+            <p>Identified and remediated a critical broken-access-control vulnerability in a patient-provider credential registry.</p>
+            <span class="pub-link">Read on Medium →</span>
+          </div>
+        </a>
+        <a class="pub-card reveal" href="https://medium.com/@kareebsadab" target="_blank" rel="noopener noreferrer" style="transition-delay:.08s;">
+          <div class="pub-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg></div>
+          <div class="pub-body">
+            <h3>More AI/ML &amp; Security Articles</h3>
+            <p>Ongoing write-ups on machine learning projects, application security, and lessons from CTF competitions.</p>
+            <span class="pub-link">Visit Medium (@kareebsadab) →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <section id="contact">
     <div class="container">
       <div class="section-eyebrow reveal">Get in touch</div>
       <h2 class="section-title reveal">Let's work together</h2>
-      <p class="section-desc reveal">Open to internships and collaborations spanning security, AI/ML, and data.</p>
+      <p class="section-desc reveal">Open to internships, research opportunities, freelance projects, and full-time roles in Cybersecurity, AI/ML, Data Science, and Backend Engineering.</p>
+      <div class="availability reveal">
+        <span class="availability-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Internship</span>
+        <span class="availability-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Freelance</span>
+        <span class="availability-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Research</span>
+        <span class="availability-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>Full-time</span>
+      </div>
       <div class="contact-grid">
         <div class="reveal">
           <div class="contact-detail">
@@ -612,17 +516,27 @@
           </div>
           <div class="contact-detail">
             <div class="contact-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg></div>
-            <div><div class="contact-label">GitHub</div><div class="contact-value"><a href="https://github.com/Solidx74" target="_blank">github.com/Solidx74</a></div></div>
+            <div><div class="contact-label">GitHub</div><div class="contact-value"><a href="https://github.com/Solidx74" target="_blank" rel="noopener noreferrer">github.com/Solidx74</a></div></div>
           </div>
         </div>
         <div class="form-card reveal">
-          <form action="https://formspree.io/f/xpqeypvd" method="POST">
+          <form id="contactForm" action="https://formspree.io/f/xpqeypvd" method="POST">
             <div class="form-row">
-              <div class="form-group"><label class="form-label">Name</label><input class="form-input" type="text" name="name" required placeholder="Your name"></div>
-              <div class="form-group"><label class="form-label">Email</label><input class="form-input" type="email" name="email" required placeholder="you@company.com"></div>
+              <div class="form-group">
+                <label class="form-label" for="cf-name">Name</label>
+                <input class="form-input" type="text" id="cf-name" name="name" autocomplete="name" required placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="cf-email">Email</label>
+                <input class="form-input" type="email" id="cf-email" name="email" autocomplete="email" required placeholder="you@company.com">
+              </div>
             </div>
-            <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" name="message" required placeholder="Tell me about the opportunity..."></textarea></div>
-            <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+            <div class="form-group">
+              <label class="form-label" for="cf-message">Message</label>
+              <textarea class="form-textarea" id="cf-message" name="message" autocomplete="off" required placeholder="Tell me about the opportunity..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit" id="cfSubmit"><span id="cfSubmitLabel">Send Message</span></button>
+            <div class="form-msg" id="cfMsg" role="status" aria-live="polite"></div>
           </form>
         </div>
       </div>
@@ -632,38 +546,15 @@
 
 <footer>
   <div class="container footer-inner">
-    <div><strong>Kareeb Sadab</strong> — Security Engineer &amp; AI/ML Developer</div>
-    <div>© 2026 &middot; CUET &middot; Chattogram, Bangladesh</div>
+    <div><strong>Kareeb Sadab</strong> — Data Scientist &amp; ML/DL Engineer</div>
+    <div>© 2026 Kareeb Sadab &middot; Built with HTML, CSS and JavaScript.</div>
   </div>
 </footer>
 
-<script>
-  // nav scroll state
-  const nav = document.getElementById('nav');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 20);
-  });
+<button id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
 
-  // reveal on scroll
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-  // project filter
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('#project-grid .project-card');
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const f = btn.dataset.f;
-      cards.forEach(card => {
-        const show = f === 'all' || card.dataset.cat === f;
-        card.style.display = show ? 'flex' : 'none';
-      });
-    });
-  });
-</script>
+<script src="script.js"></script>
 </body>
 </html>
