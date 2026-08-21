@@ -123,7 +123,10 @@
   }
   .hero-eyebrow::before{content:'';width:24px;height:1.5px;background:var(--accent);}
   .hero-title{font-size:clamp(2.1rem,4.2vw,3.2rem); font-weight:700; line-height:1.12; margin-bottom:20px;}
-  .hero-title .hl{color:var(--accent);}
+  .hero-title .hl{
+    background:linear-gradient(90deg, var(--sec-security), var(--sec-ai));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
   .hero-desc{font-size:1.05rem; color:var(--secondary); max-width:520px; margin-bottom:28px;}
   .domain-legend{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:32px;}
   .domain-pill{
