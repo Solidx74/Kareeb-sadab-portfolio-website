@@ -1,4 +1,4 @@
-// Kareeb Sadab — Portfolio Scripts
+// Kareeb Sadab - Portfolio Scripts
 
   // nav scroll state
   const nav = document.getElementById('nav');
@@ -63,7 +63,7 @@
     });
   });
 
-  // contact form — AJAX submit with feedback
+  // contact form: AJAX submit with feedback
   const cform = document.getElementById('contactForm');
   const cfSubmit = document.getElementById('cfSubmit');
   const cfSubmitLabel = document.getElementById('cfSubmitLabel');
@@ -81,14 +81,14 @@
       });
       if (res.ok) {
         cform.reset();
-        cfMsg.textContent = "Thanks — I'll get back to you soon.";
+        cfMsg.textContent = "Thanks, I'll get back to you soon.";
         cfMsg.classList.add('show','success');
       } else {
         cfMsg.textContent = 'Something went wrong. Please email me directly instead.';
         cfMsg.classList.add('show','error');
       }
     } catch (err) {
-      cfMsg.textContent = 'Network error — please try again or email me directly.';
+      cfMsg.textContent = 'Network error. Please try again or email me directly.';
       cfMsg.classList.add('show','error');
     } finally {
       cfSubmit.disabled = false;
