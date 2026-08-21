@@ -1,5 +1,3 @@
-<div align="center">
-
 # MD KAREEB
 
 **Data · Machine Learning · AI · Engineering**
@@ -7,8 +5,6 @@
 Building practical systems with data, machine learning, and AI, with security in mind.
 
 [Portfolio](https://ksportfolioweb.vercel.app) · [GitHub](https://github.com/Solidx74) · [LinkedIn](https://www.linkedin.com/in/karib-sadab-43666a407/) · [Resume](./resume.pdf)
-
-</div>
 
 ---
 
@@ -18,61 +14,49 @@ CS undergraduate at CUET, focused on data science, machine learning, and AI engi
 
 ## Focus
 
-```
-Data
-Machine Learning
-Artificial Intelligence
-Software Engineering
-Security
-```
+**Data** · **Machine Learning** · **AI** · **Software Engineering** · **Security**
 
 ## Stack
 
-**Languages**
-Python · SQL · C · C++ · Java
+**Languages:** Python · SQL · C · C++ · Java
 
-**ML / Data**
-Scikit-learn · TensorFlow · PyTorch · Pandas · NumPy · NLP
+**Data & ML:** Scikit-learn · TensorFlow · PyTorch · Pandas · NumPy · NLP
 
-**Backend**
-FastAPI · Flask · REST APIs
+**Backend:** FastAPI · Flask · REST APIs
 
-**Databases**
-PostgreSQL · MySQL · MongoDB · Supabase
+**Databases:** PostgreSQL · MySQL · MongoDB · Supabase
 
-**Tools**
-Docker · Git · Linux
+**Tools:** Docker · Git · Linux
 
-**Security**
-Threat Modeling · Vulnerability Assessment · Burp Suite · OWASP
+**Security:** Threat Modeling · Vulnerability Assessment · Burp Suite · OWASP
 
 ## Selected Work
 
 ### AI Resume Analyzer / BetteResume-ai
 A full-stack app that parses resumes against a job description using NLP/LLM calls, scores ATS fit, and drafts targeted feedback end to end.
 
-`FastAPI` · `React` · `MongoDB` · `LLM APIs`
+`FastAPI` `React` `MongoDB` `LLM APIs`
 
-[Live Demo](https://bette-resume-ai.vercel.app) · [GitHub](https://github.com/Solidx74/BetteResume-ai)
+[GitHub](https://github.com/Solidx74/BetteResume-ai) · [Live Demo](https://bette-resume-ai.vercel.app)
 
 ### Customer Churn Prediction
 Predicts customer churn with a Gradient Boosting model and SMOTE for class imbalance, served behind a Dockerized Flask API kept separate from the model layer.
 
-`Scikit-learn` · `Flask` · `Docker`
+`Scikit-learn` `Flask` `Docker`
 
 [GitHub](https://github.com/Solidx74/Customer-Churn-Analysis-and-Prediction-System)
 
 ### SIEM Log Pipeline + AI Anomaly Detection
 Real-time log parsing and feature extraction feeding Isolation Forest and One-Class SVM models to flag anomalous activity. Sits right at the intersection of ML and security.
 
-`Python` · `Pandas` · `Isolation Forest`
+`Python` `Pandas` `Isolation Forest`
 
 [GitHub](https://github.com/Solidx74/SIEM-Log-Pipeline-with-AI-Based-Anomaly-Detection)
 
 ### Loan Approval Prediction
 A classification pipeline for credit-risk assessment comparing SVM against a Decision Tree, aimed at automating a manual approval check.
 
-`Scikit-learn` · `SVM` · `Decision Tree`
+`Scikit-learn` `SVM` `Decision Tree`
 
 [GitHub](https://github.com/Solidx74/Loan-Approval-Prediction-using-Machine-Learning)
 
@@ -87,9 +71,9 @@ Owned application security across several community-driven Web3 projects, runnin
 
 ## Highlights
 
-* 15+ end-to-end projects shipped across ML, data, and security
-* Ranked #938 worldwide in picoCTF
-* Google Cybersecurity Certificate, ISC² CC, LetsDefend SOC Fundamentals
+- 15+ end-to-end projects shipped across ML, data, and security
+- Ranked #938 worldwide in picoCTF
+- Google Cybersecurity Certificate, ISC² CC, LetsDefend SOC Fundamentals
 
 ## Resume
 
@@ -99,18 +83,16 @@ Owned application security across several community-driven Web3 projects, runnin
 
 Want to see what I've been building?
 
-**[Visit the Portfolio →](https://ksportfolioweb.vercel.app)**
+**[Visit the Portfolio](https://ksportfolioweb.vercel.app)**
 
 ## Connect
 
 **Portfolio:** [ksportfolioweb.vercel.app](https://ksportfolioweb.vercel.app)
+
 **GitHub:** [github.com/Solidx74](https://github.com/Solidx74)
+
 **LinkedIn:** [linkedin.com/in/karib-sadab](https://www.linkedin.com/in/karib-sadab-43666a407/)
 
 ---
 
-<div align="center">
-
-Built by MD KAREEB
-
-</div>
+Built by **MD KAREEB**
